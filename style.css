@@ -4,7 +4,7 @@
     box-sizing: border-box
   }
   
-  html {
+  body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color:black;
@@ -23,6 +23,38 @@
     max-width: 1300px;
     margin: 0 auto;
   }
+
+  .container {
+    display: grid;
+    margin: 300px;
+    margin-top: 5%;
+  }
+
+  .card {
+    margin: 300px; 
+    background: transparent;
+    box-shadow: 3px 4px 20px rgba(0, 0, 0, .2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .3s linear;
+  }
+
+    
+.card{
+    padding: 20px 20px;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .30);
+    transform: translate3D(0, -2px, 0);
+  }
+
+  .card:nth-child(2n) h1 {
+    background: linear-gradient(90deg, rgb(83, 95, 28) 0%, rgb(223, 98, 66) 0%,
+     rgb(92, 119, 97) 0%);
+  }
+  
   
   h1 {
     text-align: center;
@@ -33,42 +65,17 @@
     color: white;
   }
 
-  h2 {
-      margin: bottom;
-  }
-  
   p {
     padding:0px 20px 20px;
     margin: auto;
   }
-  
-  .container {
-    display: grid;
-    margin: 300px;
-    margin-top: 5%;
+
+  h2 {
+      margin: bottom;
   }
   
-  .card {
-    margin: 300px; 
-    background: transparent;
-    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all .2s linear;
+  h3{
+      font-weight: normal;
   }
   
-  .card:hover {
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, .30);
-    transform: translate3D(0, -2px, 0);
-  }
-  
-.card{
-    padding: 20px 20px;
-    margin: 10px;
-}
-  
-  .card:nth-child(2n) h1 {
-    background: linear-gradient(90deg, rgb(83, 95, 28) 0%, rgb(223, 98, 66) 0%,
-     rgb(92, 119, 97) 0%);
-  }
   
